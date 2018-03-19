@@ -1,5 +1,5 @@
 // 消息id
-
+module layaDemo{
 enum MessageID
 {
     MSG_INVALID = 0,
@@ -7,4 +7,5 @@ enum MessageID
     MSG_GC_HEARTBEAT,
     MSG_CG_LOGIN,
     MSG_GC_LOGIN_RET,
+}
 }

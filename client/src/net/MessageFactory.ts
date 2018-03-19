@@ -1,4 +1,4 @@
-
+module layaDemo{
 
 class MessageFactory
 {
@@ -10,4 +10,5 @@ class MessageFactory
     private init() :void {
 
     }
+}
 }

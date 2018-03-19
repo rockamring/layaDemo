@@ -1,3 +1,4 @@
+module layaDemo{
 // 程序入口
 class GameMain{
     constructor()
@@ -6,3 +7,4 @@ class GameMain{
     }
 }
 new GameMain();
+}

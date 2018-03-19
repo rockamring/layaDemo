@@ -1,3 +1,4 @@
+module layaDemo{
 import Browser = Laya.Browser;
 class NetLogic
 {
@@ -6,4 +7,5 @@ class NetLogic
     {
 
     }
+}
 }
