@@ -1,9 +1,12 @@
+//import protocol = require('protobuf');
 module layaDemo{
+
 // 程序入口
 class GameMain{
     constructor()
     {
         Laya.init(600,400);
+        //protocol.awesomepackage.AwesomeMessage.create();
     }
 }
 new GameMain();
