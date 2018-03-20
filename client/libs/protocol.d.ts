@@ -1,4 +1,4 @@
-import * as $protobuf from "protobufjs";
+import * as $protobuf from "../bin/libs/protobuf.js";
 
 /** Namespace awesomepackage. */
 export namespace awesomepackage {
