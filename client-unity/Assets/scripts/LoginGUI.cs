@@ -46,7 +46,7 @@ public class LoginGUI : MonoBehaviour {
 	//Login the chat application and new PomeloClient.
 	void Login() {
 		string host = "127.0.0.1";
-        int port = 33014;
+        int port = 3014;
 		pc = new PomeloClient();
 
         pc.NetWorkStateChangedEvent += (state) =>
