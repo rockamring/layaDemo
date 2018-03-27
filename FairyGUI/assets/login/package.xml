@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="rfdwgko5" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="1094s0" name="购买按钮_按下_png.png" path="/"/>
+    <image id="1094s1" name="购买按钮_普通_png.png" path="/"/>
+    <component id="1094s2" name="Main.xml" path="/" exported="true"/>
+    <component id="1094s3" name="Button1.xml" path="/"/>
+  </resources>
+  <publish name="login" path="E:\layaair\layaDemo\FairyGUI\login\res"/>
+</packageDescription>

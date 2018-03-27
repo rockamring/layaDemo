@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="960,640">
+  <displayList>
+    <component id="n1_1094s" name="n1" src="1094s3" xy="363,402">
+      <Button title="登入游戏" titleFontSize="20"/>
+    </component>
+  </displayList>
+</component>
