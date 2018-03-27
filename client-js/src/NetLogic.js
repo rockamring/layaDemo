@@ -1,6 +1,6 @@
 //import * as pomelo from '../bin/libs/components/pomelonode-pomelo-jsclient-websocket/lib/pomelo-client'
 //pomelo = require('pomelonode-pomelo-jsclient-websocket/lib/pomelo-client.js');
-require('boot/index.js');
+require('boot');
 var NetLogic = (function () {
     function NetLogic() {
     }
