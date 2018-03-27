@@ -1,18 +1,19 @@
 
-//import {AwesomeMessage} from "./protocol.js"
-import {awesomepackage} from "../libs/protocol"
-//import protocol = require("awesomepackage.AwesomeMessage");
-
 module layaDemo{
-
+require('boot');
 // 程序入口
 class GameMain{
     constructor()
     {
         Laya.init(600,400);
-        //protocol.awesomepackage.AwesomeMessage.create();
 
-        awesomepackage.AwesomeMessage.create();
+        pomelo.init({
+            host:'127.0.0.1',
+            port:3014,
+            log:true
+        }, function(){
+
+        });
     }
 }
 new GameMain();
