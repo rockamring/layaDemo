@@ -15,6 +15,7 @@ class UIManager{
         ], Handler.create(this, this.onLoaded));
     }
     private onLoaded():void{
+        
         Laya.stage.addChild(fairygui.GRoot.inst.displayObject);
 
         fairygui.UIPackage.addPackage("res/Joystick");
@@ -35,7 +36,7 @@ class UIManager{
         // this._view = fairygui.UIPackage.createObject("Joystick","Main").asCom;
         // this._view.setSize(fairygui.GRoot.inst.width, fairygui.GRoot.inst.height);
         // fairygui.GRoot.inst.addChild(this._view);
-
+        
         new MainPanel();
     }
 }

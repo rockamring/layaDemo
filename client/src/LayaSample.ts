@@ -8,20 +8,31 @@ class GameMain{
 
     private _uimgr:UIManager;
     private _netmgr:NetLogic;
+    private _scenemgr:SceneManager;
     constructor()
     {
-        Laya.init(1136,640);
-		laya.utils.Stat.show(0, 0);
+        // 2d
+        // Laya.init(1136,640);
+		// laya.utils.Stat.show(0, 0);
+        // 3d
+        Laya3D.init(0, 0, true);
+        Laya.Stat.show();
+		//适配模式
+        Laya.stage.scaleMode = Laya.Stage.SCALE_FULL;
+        Laya.stage.screenMode = Laya.Stage.SCREEN_NONE;
+		// Laya.stage.scaleMode = "showall";
+        // Laya.stage.alignH = "left";
+        // Laya.stage.alignV = "top";
 		
-		Laya.stage.scaleMode = "showall";
-        Laya.stage.alignH = "left";
-        Laya.stage.alignV = "top";
-		
-		Laya.stage.screenMode = "horizontal";
+		// Laya.stage.screenMode = "horizontal";
 		
         GameMain.Instance = this;
         this._netmgr = new NetLogic();
         this._uimgr = new UIManager();
+
+
+        this._scenemgr = new SceneManager();
+        SceneManager.Instance.changeScene("Arena");
     }
 }
 new GameMain();

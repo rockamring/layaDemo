@@ -47,4 +47,16 @@ class NetLogic
         UIManager.Instance.ShowMain();
     }
 
+    public createPlayer(username:string, roleId:number):void{
+        var route = 'connector.roleHandler.createPlayer';
+        pomelo.request(route, {name:username, roleId:roleId }, function(data){
+            if (data.code == 500){
+                return; 
+            }
+        })
+    }
+
+    public changeScene():void{
+        var route = 'area.playerHandler.enterScene';
+    }
 }
