@@ -2,7 +2,7 @@
 module layaDemo{
 import Handler = laya.utils.Handler;
 import Loader = laya.net.Loader;
-
+var pomelo = require('pomelonode~pomelo-jsclient-websocket@master');
 // 程序入口
 class GameMain{
     constructor()
