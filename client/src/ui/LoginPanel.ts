@@ -27,10 +27,10 @@ class LoginPanel{
         {
             return;
         }
-        NetLogic.Instance.queryEntry(name, "1");
+        NetLogic.Instance.queryEntry(name, "room");
     }
     private onClickCreate():void{
         console.log(this._view.name);
-        SceneManager.Instance.changeScene("Arena");
+        //SceneManager.Instance.changeScene("Arena");
     }
 }

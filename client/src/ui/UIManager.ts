@@ -11,7 +11,9 @@ class UIManager{
             { url: "res/login@atlas0.png", type: Loader.IMAGE},
             { url: "res/login.fui", type: Loader.BUFFER},
             { url: "res/Joystick@atlas0.png", type: Loader.IMAGE },
-            { url: "res/Joystick.fui", type: Loader.BUFFER }
+            { url: "res/Joystick.fui", type: Loader.BUFFER },       
+            { url: "res/chat@atlas0.png", type: Loader.IMAGE },
+            { url: "res/chat.fui", type: Loader.BUFFER }
         ], Handler.create(this, this.onLoaded));
     }
     private onLoaded():void{
@@ -20,6 +22,7 @@ class UIManager{
 
         fairygui.UIPackage.addPackage("res/Joystick");
         fairygui.UIPackage.addPackage("res/login");
+        fairygui.UIPackage.addPackage("res/chat");
 
         this.ShowLogin();
         //this.ShowMain();
@@ -38,5 +41,14 @@ class UIManager{
         // fairygui.GRoot.inst.addChild(this._view);
         
         new MainPanel();
+    }
+
+    public ShowChat():void{
+
+        var cht = new ChatPanel();
+        this._container['chat'] = cht;
+    }
+    public getChatPanel():any{
+        return this._container['chat'];
     }
 }

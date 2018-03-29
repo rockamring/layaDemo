@@ -2,9 +2,11 @@ var pomelo = require('pomelonode~pomelo-jsclient-websocket@master');
 class NetLogic
 {
     public static Instance:NetLogic;
+    public _username:string;
     public constructor()
     {
         NetLogic.Instance = this;
+        this._username = "";
     }
 
     public queryEntry(uid:any, rid:any):void{
@@ -35,18 +37,39 @@ class NetLogic
                             return;
                         }
                         // login entry success
-                        NetLogic.onLoginSuccess();                        
+                        NetLogic.Instance.onLoginSuccess(data);                        
                     });
                 });                
             });
         });
     }
 
-    static onLoginSuccess():void{
-        console.log("login success!!!");
-        UIManager.Instance.ShowMain();
+    onLoginSuccess(data:any):void{
+        
+        //UIManager.Instance.ShowMain();
+        UIManager.Instance.ShowChat();
+        if (data.users.length > 0)
+        {
+            this._username = data.users[0];
+            var n = this._username;
+            console.log(`${n} login success!!!`);
+        }        
     }
 
+    public sendMsg(target:string, msg:string){
+        if (msg == "") return;
+
+        var route = 'chat.chatHandler.send';
+        pomelo.request(route, {
+            rid:"room",
+            content:msg,
+            from:this._username,
+            target:target
+        }, function(data){
+            UIManager.Instance.getChatPanel().addMsg(data);
+        })
+
+    }
     public createPlayer(username:string, roleId:number):void{
         var route = 'connector.roleHandler.createPlayer';
         pomelo.request(route, {name:username, roleId:roleId }, function(data){
