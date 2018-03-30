@@ -25,7 +25,7 @@ Server步骤：
 Client步骤
 1 unity版本: unity2017.2.0f3，layaair ts语言
 2 采用了pomelo提供的4个component，websocket、protobuf、protocol、emitter，这四个包需要通过component工具进行build
-3 这四个包是在浏览器模式下使用的，但是代码比较通用，通过简单的修改即可运行（PS：最新的component会报错，待TODO）
+3 这四个包是在浏览器模式下使用的，但是代码比较通用，通过简单的修改即可运行（PS：最新的websocket中有一行代码写错了，protobuf.encodeStr要改成protobuf.encode，否则收包会报错）
 4 ui采用fairyGUI进行编辑加载运行
 
 IV. UI简单介绍
