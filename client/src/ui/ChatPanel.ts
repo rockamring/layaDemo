@@ -43,14 +43,14 @@ class ChatPanel{
         var msg = data.msg;
         if (data.msg === null) return;
         
-        fairygui.GBasicTextField
         var content = this._content.text;
         if (content != ""){
             content = `${content}
-            '${from} say to ${target}: ${msg}'`;
+${from} say to ${target}: ${msg}`;
         }else{
             content = `${from} say to ${target}: ${msg}`;
-        }        
+        }
+        this._content.text = content;
     }
     public addUser(data:any):void{
         var user = data.user;
@@ -61,6 +61,7 @@ class ChatPanel{
             return;
         }
         this._users.push(user);
+        this._combox.items = this._users;
     }
     public delUser(data:any):void{
         var user = data.user;
@@ -71,5 +72,12 @@ class ChatPanel{
         if (idx >= 0){
             this._users.splice(idx, 1);
         }
+        this._combox.items = this._users;
+    }
+    public initUsers(data:any):void{
+        data.users.forEach(element => {
+            this._users.push(element);
+        });
+        this._combox.items = this._users;
     }
 }

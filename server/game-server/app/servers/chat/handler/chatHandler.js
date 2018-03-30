@@ -1,4 +1,4 @@
-var chatRemote = require('../remote/chatRemote');
+	var chatRemote = require('../remote/chatRemote');
 
 module.exports = function(app) {
 	return new Handler(app);
@@ -44,6 +44,9 @@ handler.send = function(msg, session, next) {
 		}]);
 	}
 	next(null, {
-		route: msg.route
+		route: msg.route,
+        msg: msg.content,
+        from: username,
+        target: msg.target
 	});
 };

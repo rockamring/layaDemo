@@ -37,6 +37,7 @@ class NetLogic
                             return;
                         }
                         // login entry success
+                        NetLogic.Instance._username = uid;
                         NetLogic.Instance.onLoginSuccess(data);                        
                     });
                 });                
@@ -44,15 +45,14 @@ class NetLogic
         });
     }
 
-    onLoginSuccess(data:any):void{
+    public onLoginSuccess(data:any):void{
         
         //UIManager.Instance.ShowMain();
         UIManager.Instance.ShowChat();
         if (data.users.length > 0)
         {
-            this._username = data.users[0];
-            var n = this._username;
-            console.log(`${n} login success!!!`);
+            console.log(`${this._username} login success!!!`);
+            UIManager.Instance.getChatPanel().initUsers(data);
         }        
     }
 
@@ -60,7 +60,7 @@ class NetLogic
         if (msg == "") return;
 
         var route = 'chat.chatHandler.send';
-        pomelo.request(route, {
+        pomelo.request(route, { 
             rid:"room",
             content:msg,
             from:this._username,
