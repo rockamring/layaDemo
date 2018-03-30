@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="103,41" extention="Button">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="0"/>
+  <displayList>
+    <image id="n0_j7y3" name="n0" src="j7y3d" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+    </image>
+    <image id="n1_j7y3" name="n1" src="j7y3e" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+    </image>
+    <image id="n2_j7y3" name="n2" src="j7y3f" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n3_j7y3" name="n3" src="j7y3g" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <text id="n4_j7y3" name="title" xy="2,2" size="91,37" fontSize="24" color="#cc0000" autoSize="none" text="">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+  </displayList>
+  <Button/>
+</component>

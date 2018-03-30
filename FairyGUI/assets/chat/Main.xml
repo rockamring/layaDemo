@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <image id="n1_j7y3" name="n1" src="j7y30" xy="3,1" size="1134,637"/>
+    <image id="n3_j7y3" name="n3" src="j7y31" xy="134,592" size="801,33"/>
+    <component id="n4_j7y3" name="n4" src="j7y34" pkg="7cimoc8f" xy="972,578">
+      <Button title="发送" titleColor="#99ff00" titleFontSize="24"/>
+    </component>
+    <text id="n5_j7y3" name="n5" xy="137,593" size="796,28" input="true" fontSize="24" color="#33ff00" autoSize="none" text=""/>
+    <component id="n7_j7y3" name="n7" src="j7y39" xy="6,584">
+      <ComboBox titleColor="#66ff66" visibleItemCount="10"/>
+    </component>
+    <text id="n8_j7y3" name="n8" xy="26,43" size="1089,533" fontSize="24" color="#00ffff" autoSize="none" text=""/>
+  </displayList>
+</component>

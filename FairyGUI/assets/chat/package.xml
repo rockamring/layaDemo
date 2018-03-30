@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="lkizew19" jpegQuality="80" compressPNG="true">
+  <resources>
+    <image id="j7y30" name="6_png.png" path="/" scale="9grid" scale9grid="40,51,80,102"/>
+    <image id="j7y31" name="c1_png.png" path="/" scale="9grid" scale9grid="24,6,48,10"/>
+    <component id="j7y32" name="Main.xml" path="/" exported="true"/>
+    <image id="j7y33" name="下拉框_按下_png.png" path="/"/>
+    <image id="j7y34" name="下拉框_不可用_png.png" path="/"/>
+    <image id="j7y35" name="下拉框_普通_png.png" path="/"/>
+    <image id="j7y36" name="下拉框_选中_png.png" path="/"/>
+    <component id="j7y37" name="Button1.xml" path="/"/>
+    <component id="j7y38" name="Button2.xml" path="/"/>
+    <component id="j7y39" name="ComboBox.xml" path="/"/>
+    <component id="j7y3a" name="popupBG.xml" path="/"/>
+    <image id="j7y3b" name="显示框_png.png" path="/" scale="9grid" scale9grid="26,11,52,22"/>
+    <component id="j7y3c" name="popupItem.xml" path="/"/>
+    <image id="j7y3d" name="输入框_按下_png.png" path="/"/>
+    <image id="j7y3e" name="输入框_不可用_png.png" path="/"/>
+    <image id="j7y3f" name="输入框_普通_png.png" path="/"/>
+    <image id="j7y3g" name="输入框_选中_png.png" path="/"/>
+  </resources>
+  <publish name="chat" path="E:\layaair\layaDemo\FairyGUI\chat\res"/>
+</packageDescription>

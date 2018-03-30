@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component size="960,640">
+<component size="1136,640">
   <displayList>
-    <component id="n1_1094s" name="n1" src="1094s3" xy="363,402">
-      <Button title="登入游戏" titleFontSize="20"/>
+    <graph id="n3_j7y3" name="n3" xy="404,302" size="227,55" type="rect"/>
+    <text id="n2_j7y3" name="n2" xy="404,300" size="221,57" input="true" fontSize="24" autoSize="none" singleLine="true" text=""/>
+    <text id="n4_j7y3" name="n4" xy="311,315" size="83,37" fontSize="24" color="#ff0000" autoSize="none" text="账号："/>
+    <component id="n8_j7y3" name="n8" src="j7y34" xy="325,398">
+      <Button title="创建角色" titleColor="#99ff00" titleFontSize="24"/>
+    </component>
+    <component id="n9_j7y3" name="n9" src="j7y34" xy="537,399">
+      <Button title="进入游戏" titleColor="#99ff00" titleFontSize="24"/>
     </component>
   </displayList>
 </component>

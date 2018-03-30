@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="132,40" extention="ComboBox">
+  <controller name="button" pages="0,up,1,down,2,over,3,selectedOver" selected="1"/>
+  <displayList>
+    <image id="n1_j7y3" name="n1" src="j7y35" xy="0,0">
+      <gearDisplay controller="button" pages="0"/>
+    </image>
+    <image id="n2_j7y3" name="n2" src="j7y33" xy="0,0">
+      <gearDisplay controller="button" pages="1"/>
+    </image>
+    <image id="n3_j7y3" name="n3" src="j7y36" xy="0,0">
+      <gearDisplay controller="button" pages="2"/>
+    </image>
+    <image id="n4_j7y3" name="n4" src="j7y34" xy="0,0">
+      <gearDisplay controller="button" pages="3"/>
+    </image>
+    <text id="n5_j7y3" name="title" xy="4,4" size="92,32" fontSize="24" color="#ff0000" autoSize="none" text=""/>
+  </displayList>
+  <ComboBox dropdown="ui://lkizew19j7y3a"/>
+</component>
