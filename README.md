@@ -44,4 +44,4 @@ IV. UI简单介绍
 6 protobuf:https://github.com/pomelonode/pomelo-protobuf
 7 protocol:https://github.com/NetEase/pomelo-protocol
 8 websocket:https://github.com/pomelonode/pomelo-jsclient-websocket
-9 component:
+9 component:https://github.com/componentjs/component
